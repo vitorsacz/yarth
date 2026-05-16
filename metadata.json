@@ -1,0 +1,8 @@
+{
+  "name": "Yarth - Soluções personalizadas",
+  "description": "Soluções de alto padrão em esquadrias de alumínio, vidraçaria completa e serralheria moderna.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
