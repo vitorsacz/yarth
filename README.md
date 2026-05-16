@@ -1,6 +1,6 @@
 # Yarth - Soluções Personalizadas
 
-![Yarth Logo](./src/assets/logo-escrita-preto.svg)
+![Yarth Logo](./src/assets/logo-escrita-branco.svg)
 
 **Yarth** é uma empresa líder em soluções de alto padrão para arquitetura e design de interiores, especializada em esquadrias de alumínio, vidraçaria completa, serralheria moderna e mobiliário personalizado. Sediada em Mairiporã (SP) e com atendimento em todo o Brasil, a Yarth une tecnologia, design e excelência técnica para transformar projetos residenciais, comerciais e corporativos.
 
