@@ -618,7 +618,7 @@ export default function App() {
           
           <div className="pt-8 border-t border-slate-100 flex flex-col justify-center items-center gap-4 text-[10px] font-bold uppercase tracking-widest text-slate-400">
             <p>© 2026 Yarth. Todos os direitos reservados</p>
-            <a href="www.vitorsantos.dev.br" target="blank"><p>Desenvolvido por <span className="text-slate-900">Vitor Sacz</span></p></a>
+            <a href="https://www.vitorsantos.dev.br" target="blank"><p>Desenvolvido por <span className="text-slate-900">Vitor Santos</span></p></a>
           </div>
         </div>
       </footer>
