@@ -39,8 +39,9 @@ Este projeto foi desenvolvido utilizando as tecnologias mais modernas do ecossis
 /
 ├── src/
 │   ├── assets/       # Imagens, logotipos e vetores (SVG, WebP)
-│   ├── components/   # Componentes reutilizáveis (UI/Layout)
-│   ├── App.tsx       # Componente principal e rotas
+│   ├── components/   # Um componente por seção da página (Header, Hero, About, Services, Furniture, Portfolio, WhyUs, Footer, Lightbox)
+│   ├── data/          # Conteúdo estático (nav, serviços, galerias) separado da UI
+│   ├── App.tsx       # Composição das seções e estado do Lightbox
 │   └── index.css     # Configurações globais e Tailwind
 ├── index.html        # Entry point HTML
 ├── metadata.json     # Metadados da aplicação
