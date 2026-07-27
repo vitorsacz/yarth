@@ -1,4 +1,5 @@
-import { aboutImage, philosophyImage, SERVICES } from '../data/content';
+import { ChevronRight } from 'lucide-react';
+import { aboutImage, philosophyImage, SERVICES, WHATSAPP_URL } from '../data/content';
 
 export default function About() {
   return (
@@ -39,66 +40,73 @@ export default function About() {
             </div>
           </div>
         </div>
+      </div>
 
-        <div className="mt-32">
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl min-h-[420px] md:min-h-[480px]">
-            <img
-              src={philosophyImage}
-              alt="Nossa Filosofia"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-slate-950/75" />
+      {/* Full-bleed Nossa Filosofia / Nossa Essência panel */}
+      <div className="mt-32">
+        <div className="relative overflow-hidden">
+          <img
+            src={philosophyImage}
+            alt="Nossa Filosofia"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-slate-950/75" />
 
-            <div className="relative z-10 grid md:grid-cols-3 gap-12 md:gap-16 p-10 md:p-16 lg:p-20 pb-24 md:pb-32">
-              <div className="col-span-1 md:col-span-2">
-                <h4 className="text-sm font-bold text-white/60 uppercase tracking-[0.3em] mb-6">Nossa Filosofia</h4>
-                <div className="space-y-6 text-white/80 leading-relaxed text-lg">
-                  <p>
-                    Nosso verdadeiro diferencial está na união perfeita entre tecnologia, design e experiência. Acreditamos que cada detalhe importa. Por isso, desenvolvemos projetos sob medida que combinam estética, funcionalidade e durabilidade.
-                  </p>
-                  <p>
-                    Para nós, a satisfação do cliente é prioridade absoluta. Garantimos um acompanhamento técnico rigoroso em todas as etapas — desde o primeiro atendimento até o cuidado no pós-venda —, entregando resultados que valorizam e transformam cada ambiente.
-                  </p>
-                </div>
+          <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-28">
+            <div className="max-w-2xl">
+              <h4 className="text-2xl md:text-3xl font-display font-bold text-white mb-6">Nossa Filosofia</h4>
+              <div className="space-y-6 text-white/80 leading-relaxed text-lg">
+                <p>
+                  Nosso verdadeiro diferencial está na união perfeita entre tecnologia, design e experiência. Acreditamos que cada detalhe importa. Por isso, desenvolvemos projetos sob medida que combinam estética, funcionalidade e durabilidade.
+                </p>
+                <p>
+                  Para nós, a satisfação do cliente é prioridade absoluta. Garantimos um acompanhamento técnico rigoroso em todas as etapas — desde o primeiro atendimento até o cuidado no pós-venda —, entregando resultados que valorizam e transformam cada ambiente.
+                </p>
               </div>
+            </div>
 
-              <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-6 h-fit">
-                <h4 className="text-xs font-bold text-white uppercase tracking-[0.2em] mb-4 border-b border-white/20 pb-2">Nossa Essência</h4>
-                <div className="space-y-4">
-                  <div>
-                    <span className="text-[10px] font-bold text-white/50 uppercase block mb-1">Missão</span>
-                    <p className="text-sm text-white/80">Transformar ideias em projetos reais, com máxima qualidade e confiança.</p>
-                  </div>
-                  <div>
-                    <span className="text-[10px] font-bold text-white/50 uppercase block mb-1">Visão</span>
-                    <p className="text-sm text-white/80">Ser a grande referência nacional em soluções de alumínio, vidro e estruturas metálicas.</p>
-                  </div>
-                  <div>
-                    <span className="text-[10px] font-bold text-white/50 uppercase block mb-1">Valores</span>
-                    <p className="text-sm text-white/90 font-medium">Compromisso, inovação, respeito e excelência.</p>
-                  </div>
+            <div className="mt-16 bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-8 md:p-10">
+              <h4 className="text-2xl md:text-3xl font-display font-bold text-white mb-8">Nossa Essência</h4>
+              <div className="grid sm:grid-cols-3 gap-8">
+                <div>
+                  <span className="text-[10px] font-bold text-white/50 uppercase block mb-1">Missão</span>
+                  <p className="text-sm text-white/80">Transformar ideias em projetos reais, com máxima qualidade e confiança.</p>
+                </div>
+                <div>
+                  <span className="text-[10px] font-bold text-white/50 uppercase block mb-1">Visão</span>
+                  <p className="text-sm text-white/80">Ser a grande referência nacional em soluções de alumínio, vidro e estruturas metálicas.</p>
+                </div>
+                <div>
+                  <span className="text-[10px] font-bold text-white/50 uppercase block mb-1">Valores</span>
+                  <p className="text-sm text-white/90 font-medium">Compromisso, inovação, respeito e excelência.</p>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div className="relative z-10 -mt-16 md:-mt-24 px-6 md:px-16">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-              {SERVICES.map((service) => (
-                <div key={service.title} className="group rounded-2xl overflow-hidden bg-white shadow-xl">
-                  <div className="aspect-[4/3] overflow-hidden">
-                    <img
-                      src={service.image}
-                      alt={service.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                  </div>
-                  <div className="p-5">
-                    <p className="text-xs font-bold uppercase tracking-widest text-slate-900">{service.title}</p>
-                  </div>
+        <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 -mt-16 md:-mt-24">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {SERVICES.map((service) => (
+              <div key={service.title} className="group rounded-2xl overflow-hidden bg-white shadow-xl">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
                 </div>
-              ))}
-            </div>
+                <div className="p-5">
+                  <p className="text-xs font-bold uppercase tracking-widest text-slate-900">{service.title}</p>
+                  <a
+                    href={WHATSAPP_URL}
+                    className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-slate-400 hover:text-slate-900 transition-colors pt-4"
+                  >
+                    Saiba Mais <ChevronRight className="w-3 h-3" />
+                  </a>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

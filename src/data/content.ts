@@ -88,4 +88,4 @@ export const WHY_US = [
   { title: 'Compromisso', description: 'Entregas rigorosamente dentro do prazo.' },
 ];
 
-export { g4 as aboutImage, g6 as heroImage, g2 as philosophyImage };
+export { g4 as aboutImage, g6 as heroImage, g6 as philosophyImage };

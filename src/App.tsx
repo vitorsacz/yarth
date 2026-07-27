@@ -3,7 +3,6 @@ import Header from './components/Header';
 import Lightbox from './components/Lightbox';
 import Hero from './components/Hero';
 import About from './components/About';
-import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import WhyUs from './components/WhyUs';
 import Footer from './components/Footer';
@@ -17,7 +16,7 @@ export default function App() {
       <Header />
       <Hero />
       <About />
-      <Services />
+      {/* <Services /> */}
       {/* <Furniture onSelectImage={setSelectedImage} /> */}
       <Portfolio onSelectImage={setSelectedImage} />
       <WhyUs />
