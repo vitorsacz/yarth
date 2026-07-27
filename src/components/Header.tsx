@@ -28,7 +28,7 @@ export default function Header() {
           <img
             src={logoPreto}
             alt="Yarth logo"
-            className={`${scrolled ? 'h-10 md:h-14' : 'h-14 md:h-36'} w-auto transition-all duration-300`}
+            className={`${scrolled ? 'h-10 md:h-14' : 'h-14 md:h-20'} w-auto transition-all duration-300`}
           />
         </a>
 

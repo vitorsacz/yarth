@@ -23,7 +23,6 @@ export const WHATSAPP_URL = "https://wa.me/5511966446215?text=Olá,%20vim%20pelo
 export const ADDRESS = "Rua dos Cedros, 163, Mairiporã - SP";
 
 export const NAV_LINKS = [
-  { name: 'Início', href: '#home' },
   { name: 'A Yarth', href: '#about' },
   { name: 'Serviços', href: '#services' },
   { name: 'Mobiliário', href: '#furniture' },
