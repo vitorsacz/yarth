@@ -1,5 +1,5 @@
 import { Instagram } from 'lucide-react';
-import { WHATSAPP_URL } from '../data/content';
+import { ADDRESS, WHATSAPP_URL } from '../data/content';
 import WhatsAppIcon from './WhatsAppIcon';
 
 export default function Footer() {
@@ -14,7 +14,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-col gap-3">
               <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">Escritório</span>
-              <span className="text-sm font-bold text-slate-900 uppercase tracking-tight">Mairiporã - SP | Atendimento Nacional</span>
+              <span className="text-sm font-bold text-slate-900 uppercase tracking-tight">{ADDRESS}</span>
             </div>
           </div>
 
@@ -44,6 +44,19 @@ export default function Footer() {
               </a>
             </div>
           </div>
+        </div>
+
+        <div className="mb-16 rounded-2xl overflow-hidden border border-slate-100 shadow-lg">
+          <iframe
+            src={`https://www.google.com/maps?q=${encodeURIComponent(ADDRESS)}&output=embed`}
+            width="100%"
+            height="360"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Localização da Yarth"
+          />
         </div>
 
         <div className="pt-8 border-t border-slate-100 flex flex-col justify-center items-center gap-4 text-[10px] font-bold uppercase tracking-widest text-slate-400">

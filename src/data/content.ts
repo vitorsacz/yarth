@@ -20,12 +20,15 @@ import m8 from '../assets/m_8.svg';
 
 export const WHATSAPP_URL = "https://wa.me/5511966446215?text=Olá,%20vim%20pelo%20site%20de%20vocês.%20Tenho%20interesse%20em%20fazer%20um%20orçamento!";
 
+export const ADDRESS = "Rua dos Cedros, 163, Mairiporã - SP";
+
 export const NAV_LINKS = [
   { name: 'Início', href: '#home' },
   { name: 'A Yarth', href: '#about' },
   { name: 'Serviços', href: '#services' },
   { name: 'Mobiliário', href: '#furniture' },
   { name: 'Portfólio', href: '#portfolio' },
+  { name: 'Avaliações', href: '#reviews' },
   { name: 'Diferenciais', href: '#why-us' },
   { name: 'Contato', href: '#contact' },
 ];
@@ -79,6 +82,62 @@ export const FURNITURE_GALLERY = [
   { url: m6, title: 'Estanteria Premium' },
   { url: m7, title: 'Detalhes Técnicos' },
   { url: m8, title: 'Ambientes Integrados' },
+];
+
+export const GOOGLE_RATING = {
+  average: 4.9,
+  count: 130,
+};
+
+export const GOOGLE_REVIEWS = [
+  {
+    name: 'Marina Ferreira',
+    initials: 'MF',
+    color: 'bg-slate-800',
+    rating: 5,
+    date: 'há 2 semanas',
+    text: 'Equipe extremamente profissional, o acabamento das esquadrias ficou impecável. Recomendo muito a Yarth!',
+  },
+  {
+    name: 'Roberto Almeida',
+    initials: 'RA',
+    color: 'bg-amber-600',
+    rating: 5,
+    date: 'há 1 mês',
+    text: 'Contratei a Yarth para o box do banheiro e ficou show. Prazo cumprido à risca e time muito atencioso.',
+  },
+  {
+    name: 'Camila Souza',
+    initials: 'CS',
+    color: 'bg-emerald-700',
+    rating: 5,
+    date: 'há 3 meses',
+    text: 'Serviço de serralheria excelente, o portão automático funciona perfeitamente até hoje. Nota 10.',
+  },
+  {
+    name: 'Eduardo Lima',
+    initials: 'EL',
+    color: 'bg-sky-700',
+    rating: 4,
+    date: 'há 4 meses',
+    text: 'Bom atendimento e material de qualidade, só demorou um pouco além do combinado. No mais, sem reclamações.',
+  },
+  {
+    name: 'Patrícia Nogueira',
+    initials: 'PN',
+    color: 'bg-rose-700',
+    rating: 5,
+    date: 'há 5 meses',
+    text: 'A vidraçaria da minha sacada ficou linda, superou minhas expectativas. Equipe muito educada e limpa no serviço.',
+  },
+  {
+    name: 'Fernando Costa',
+    initials: 'FC',
+    color: 'bg-indigo-700',
+    rating: 5,
+    date: 'há 6 meses',
+    text: 'Profissionalismo do início ao fim. Já fechei outros dois projetos com eles e a qualidade se mantém sempre alta.',
+  },
 ];
 
 export const WHY_US = [
