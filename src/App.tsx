@@ -1,17 +1,11 @@
 import { useState, useEffect } from 'react';
-import { 
-  Menu, 
-  X, 
-  Phone, 
-  Mail, 
-  MapPin, 
-  ChevronRight, 
-  ShieldCheck, 
-  Clock, 
-  Gem, 
-  Maximize, 
-  GlassWater, 
-  Fence, 
+import {
+  Menu,
+  X,
+  ChevronRight,
+  Maximize,
+  GlassWater,
+  Fence,
   Wrench,
   Instagram
 } from 'lucide-react';
@@ -27,7 +21,6 @@ import g6 from './assets/g_6.webp';
 import g8 from './assets/g_8.webp';
 import g9 from './assets/g_9.webp';
 import logoPreto from './assets/logo-escrita-preto.svg';
-import logoBranco from './assets/logo-escrita-branco.svg';
 
 // Import furniture assets
 import m1 from './assets/m_1.svg';
@@ -86,24 +79,6 @@ const SERVICES = [
     icon: Wrench,
     image: g3
   },
-];
-
-const FEATURES = [
-  {
-    title: 'Atendimento Personalizado',
-    description: 'Projetos exclusivos que se adaptam perfeitamente à sua necessidade arquitetônica.',
-    icon: Gem
-  },
-  {
-    title: 'Materiais Premium',
-    description: 'Utilizamos apenas as melhores ligas de alumínio e vidros de alta resistência.',
-    icon: ShieldCheck
-  },
-  {
-    title: 'Entrega Rigorosa',
-    description: 'Compromisso absoluto com os prazos estabelecidos em contrato.',
-    icon: Clock
-  }
 ];
 
 const GALLERY = [
