@@ -6,7 +6,7 @@ export default function Services() {
   return (
     <section id="services" className="py-24 bg-slate-50 border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {SERVICES.map((service, idx) => (
             <motion.div
               key={service.title}

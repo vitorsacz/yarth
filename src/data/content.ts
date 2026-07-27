@@ -1,4 +1,4 @@
-import { Maximize, GlassWater, Fence, Wrench } from 'lucide-react';
+import { Maximize, GlassWater, Fence } from 'lucide-react';
 
 import g1 from '../assets/g_1.webp';
 import g2 from '../assets/g_2.webp';
@@ -41,19 +41,13 @@ export const SERVICES = [
     title: 'Vidraçaria Completa',
     description: 'Boxes, guarda-corpos em vidro, espelhos e envidraçamento de sacadas com segurança e sofisticação.',
     icon: GlassWater,
-    image: g2
+    image: g9
   },
   {
     title: 'Serralheria Moderna',
     description: 'Portões automáticos, estruturas metálicas sob medida e corrimãos com acabamento impecável.',
     icon: Fence,
     image: g8
-  },
-  {
-    title: 'Instalação e Manutenção',
-    description: 'Equipe técnica especializada para garantir a durabilidade e o funcionamento perfeito de cada projeto.',
-    icon: Wrench,
-    image: g3
   },
 ];
 
@@ -94,4 +88,4 @@ export const WHY_US = [
   { title: 'Compromisso', description: 'Entregas rigorosamente dentro do prazo.' },
 ];
 
-export { g4 as aboutImage, g6 as heroImage };
+export { g4 as aboutImage, g6 as heroImage, g2 as philosophyImage };
