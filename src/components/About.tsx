@@ -1,5 +1,6 @@
 import { ChevronRight } from 'lucide-react';
-import { aboutImage, philosophyImage, SERVICES, WHATSAPP_URL } from '../data/content';
+import { Link } from 'react-router-dom';
+import { aboutImage, philosophyImage, SERVICES } from '../data/content';
 
 export default function About() {
   return (
@@ -88,7 +89,11 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 -mt-16 md:-mt-24">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {SERVICES.map((service) => (
-              <div key={service.title} className="group rounded-2xl overflow-hidden bg-white shadow-xl">
+              <Link
+                key={service.title}
+                to={`/${service.slug}`}
+                className="group rounded-2xl overflow-hidden bg-white shadow-xl block"
+              >
                 <div className="aspect-[4/3] overflow-hidden">
                   <img
                     src={service.image}
@@ -98,14 +103,11 @@ export default function About() {
                 </div>
                 <div className="p-5">
                   <p className="text-xs font-bold uppercase tracking-widest text-slate-900">{service.title}</p>
-                  <a
-                    href={WHATSAPP_URL}
-                    className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-slate-400 hover:text-slate-900 transition-colors pt-4"
-                  >
+                  <span className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-slate-400 group-hover:text-slate-900 transition-colors pt-4">
                     Saiba Mais <ChevronRight className="w-3 h-3" />
-                  </a>
+                  </span>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

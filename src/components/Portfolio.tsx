@@ -1,11 +1,12 @@
 import { motion } from 'motion/react';
-import { GALLERY } from '../data/content';
+import { PROJECT_GALLERY } from '../data/content';
+import PortfolioCard from './PortfolioCard';
 
 interface PortfolioProps {
-  onSelectImage: (url: string) => void;
+  onOpenGallery: (images: string[]) => void;
 }
 
-export default function Portfolio({ onSelectImage }: PortfolioProps) {
+export default function Portfolio({ onOpenGallery }: PortfolioProps) {
   return (
     <section id="portfolio" className="py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-12">
@@ -22,25 +23,15 @@ export default function Portfolio({ onSelectImage }: PortfolioProps) {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {GALLERY.map((item, idx) => (
+          {PROJECT_GALLERY.map((item, idx) => (
             <motion.div
-              key={idx}
+              key={item.title}
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.05 }}
-              className="group relative aspect-square overflow-hidden bg-slate-100 cursor-zoom-in"
-              onClick={() => onSelectImage(item.url)}
             >
-              <img
-                src={item.url}
-                alt={item.title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="text-white text-xs font-bold uppercase tracking-widest">{item.title}</p>
-              </div>
+              <PortfolioCard item={item} onOpenGallery={onOpenGallery} />
             </motion.div>
           ))}
         </div>
