@@ -79,7 +79,7 @@ export default function ServicePageLayout({
             <h3 className="text-3xl md:text-5xl font-display font-bold text-slate-900 tracking-tighter mb-16">
               {galleryHeading}
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
               {galleryItems.map((item, idx) => (
                 <motion.div
                   key={item.title}

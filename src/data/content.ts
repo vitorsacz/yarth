@@ -5,6 +5,7 @@ import g5 from '../assets/g_5.webp';
 import g6 from '../assets/g_6.webp';
 import g8 from '../assets/g_8.webp';
 import g9 from '../assets/g_9.webp';
+import companyFacadeImage from '../assets/fachada-empresa.webp';
 
 import pEsquadriaPortaExterna from '../assets/portfolio/esquadria-porta-externa.webp';
 import pEsquadriaPortasExterna from '../assets/portfolio/esquadria-portas-externa.webp';
@@ -72,12 +73,11 @@ import m8 from '../assets/m_8.svg';
 
 export const WHATSAPP_URL = "https://wa.me/5511966446215?text=Olá,%20vim%20pelo%20site%20de%20vocês.%20Tenho%20interesse%20em%20fazer%20um%20orçamento!";
 
-export const ADDRESS = "Rua dos Cedros, 163, Mairiporã - SP";
+export const ADDRESS = "Rua dos Cedros, 133, Mairiporã - SP";
 
 export const NAV_LINKS = [
   { name: 'A Yarth', href: '#about' },
   { name: 'Serviços', href: '#services' },
-  { name: 'Mobiliário', href: '/mobiliario' },
   { name: 'Portfólio', href: '#portfolio' },
   { name: 'Avaliações', href: '#reviews' },
   { name: 'Diferenciais', href: '#why-us' },
@@ -226,7 +226,7 @@ export const PROJECT_GALLERY: PortfolioItem[] = [
     images: [pSerralheriaPortao, pSerralheriaGradilRicardo, pSerralheriaTelhadoSanduiche],
   },
   {
-    title: 'Móveis',
+    title: 'Mobiliário',
     areas: ['Mobiliário'],
     images: [m1, m2, m3, m4, m5, m6, m7, m8, pMoveisCristaleira],
   },
@@ -335,4 +335,4 @@ export const WHY_US = [
   { title: 'Compromisso', description: 'Entregas rigorosamente dentro do prazo.' },
 ];
 
-export { g4 as aboutImage, g6 as heroImage, g6 as philosophyImage };
+export { g4 as aboutImage, g6 as heroImage, g6 as philosophyImage, companyFacadeImage };
