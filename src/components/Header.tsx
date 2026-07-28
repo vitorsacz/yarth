@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown, Menu, X } from 'lucide-react';
-import logoPreto from '../assets/logo-escrita-preto.svg';
+import logoPreto from '../assets/logo-sem-escrita-preto.svg';
 import { NAV_LINKS, SERVICES, WHATSAPP_URL } from '../data/content';
 import WhatsAppIcon from './WhatsAppIcon';
 
@@ -24,7 +24,7 @@ export default function Header() {
 
   const serviceLinks = [
     ...SERVICES.map((service) => ({ title: service.title, to: `/${service.slug}` })),
-    { title: 'Móveis', to: '/mobiliario' },
+    { title: 'Mobiliário', to: '/mobiliario' },
   ];
 
   return (
@@ -43,7 +43,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-6 xl:gap-10 shrink-0">
+        <nav className="hidden lg:flex items-center justify-center flex-1 gap-6 xl:gap-10">
           {NAV_LINKS.map((link) =>
             link.name === 'Serviços' ? (
               <div key={link.name} className="relative group">
@@ -83,15 +83,16 @@ export default function Header() {
               </Link>
             )
           )}
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noreferrer"
-            className="bg-slate-900 text-white px-6 py-3.5 text-[10px] font-bold uppercase tracking-widest hover:bg-slate-800 transition-all whitespace-nowrap ml-4"
-          >
-            Falar com Especialista
-          </a>
         </nav>
+
+        <a
+          href={WHATSAPP_URL}
+          target="_blank"
+          rel="noreferrer"
+          className="hidden lg:inline-block bg-slate-900 text-white px-6 py-3.5 text-[10px] font-bold uppercase tracking-widest hover:bg-slate-800 transition-all whitespace-nowrap shrink-0"
+        >
+          Falar com Especialista
+        </a>
 
         {/* Mobile Menu Toggle */}
         <button

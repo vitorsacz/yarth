@@ -1,5 +1,5 @@
 import { Instagram } from 'lucide-react';
-import { ADDRESS, WHATSAPP_URL } from '../data/content';
+import { ADDRESS, companyFacadeImage, WHATSAPP_URL } from '../data/content';
 import WhatsAppIcon from './WhatsAppIcon';
 
 export default function Footer() {
@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="flex flex-wrap gap-12">
             <div className="flex flex-col gap-3">
               <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">Email</span>
-              <a href="mailto:contato@yarth.com.br" className="text-sm font-bold text-slate-900 hover:underline">contato@yarth.com.br</a>
+              <a href="mailto:yarthempresa@gmail.com" className="text-sm font-bold text-slate-900 hover:underline">yarthempresa@gmail.com</a>
             </div>
             <div className="flex flex-col gap-3">
               <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">Escritório</span>
@@ -21,7 +21,12 @@ export default function Footer() {
           <div className="flex flex-col md:items-end gap-6">
             <div className="flex flex-col md:items-end gap-1">
               <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">Telefone</span>
-              <span className="text-2xl font-display font-black text-slate-900 tracking-tighter">+55 (11) 96644-6215</span>
+              <a
+                href="tel:+5511966446215"
+                className="text-2xl font-display font-black text-slate-900 tracking-tighter hover:text-slate-600 transition-colors"
+              >
+                +55 (11) 96644-6215
+              </a>
             </div>
             <div className="flex items-center gap-4">
               <a
@@ -46,17 +51,26 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mb-16 rounded-2xl overflow-hidden border border-slate-100 shadow-lg">
-          <iframe
-            src={`https://www.google.com/maps?q=${encodeURIComponent(ADDRESS)}&output=embed`}
-            width="100%"
-            height="360"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Localização da Yarth"
-          />
+        <div className="mb-16 grid sm:grid-cols-2 gap-4">
+          <div className="rounded-2xl overflow-hidden border border-slate-100 shadow-lg">
+            <img
+              src={companyFacadeImage}
+              alt="Fachada da Yarth"
+              className="w-full h-[360px] object-cover"
+            />
+          </div>
+          <div className="rounded-2xl overflow-hidden border border-slate-100 shadow-lg">
+            <iframe
+              src={`https://www.google.com/maps?q=${encodeURIComponent(ADDRESS)}&output=embed`}
+              width="100%"
+              height="360"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Localização da Yarth"
+            />
+          </div>
         </div>
 
         <div className="pt-8 border-t border-slate-100 flex flex-col justify-center items-center gap-4 text-[10px] font-bold uppercase tracking-widest text-slate-400">
