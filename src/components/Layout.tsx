@@ -3,6 +3,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import Header from './Header';
 import Lightbox from './Lightbox';
 import Footer from './Footer';
+import VLibras from './VLibras';
 
 export interface LayoutContext {
   openGallery: (images: string[]) => void;
@@ -29,6 +30,7 @@ export default function Layout() {
       <Header />
       <Outlet context={{ openGallery: setSelectedGallery } satisfies LayoutContext} />
       <Footer />
+      <VLibras />
     </div>
   );
 }
