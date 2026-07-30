@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="flex flex-wrap gap-12">
             <div className="flex flex-col gap-3">
               <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">Email</span>
-              <a href="mailto:yarthempresa@gmail.com" className="text-sm font-bold text-slate-900 hover:underline">yarthempresa@gmail.com</a>
+              <a href="mailto:contato@yarth.com.br" className="text-sm font-bold text-slate-900 hover:underline">contato@yarth.com.br</a>
             </div>
             <div className="flex flex-col gap-3">
               <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">Escritório</span>
